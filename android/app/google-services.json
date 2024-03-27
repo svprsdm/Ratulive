@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "1091287163056",
+    "firebase_url": "https://ratustaging-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ratustaging",
+    "storage_bucket": "ratustaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091287163056:android:685555147746465e5f1b75",
+        "android_client_info": {
+          "package_name": "app.ratulive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091287163056-4vooubs7l9pmujfdi03a8fsqqcpp9d5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.ratulive",
+            "certificate_hash": "0faac9f0089e6c4152786b236dd06e46ed5a6a7a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn9BnRvDJSlM7yAjJWMJAfIA-xIBxR-FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091287163056-365rkd9nvrel70ahsdagbfeh55n9mjk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

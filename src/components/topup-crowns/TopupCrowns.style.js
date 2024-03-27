@@ -1,0 +1,86 @@
+import {StyleSheet, Platform, Dimensions} from 'react-native';
+const deviceWidth = Dimensions.get('window').width;
+const deviceHeight = Dimensions.get('window').height;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 10,
+    backgroundColor: '#000000',
+  },
+  liveImage: {
+    // width: 30,
+    //height: 50,
+    //marginLeft: 30,
+    marginTop: 10,
+    marginBottom: 10,
+    borderRadius: 10,
+    //tintColor: 'yellow',
+    // justifyContent: 'center',
+  },
+  flatListStyle: {
+    margin: 10,
+    backgroundColor: '#2C2C2C',
+    alignItems: 'center',
+    //justifyContent: 'center',
+    height: (Dimensions.get('screen').width - 10) / 2,
+    flex: 1,
+    borderRadius: 20,
+    color: 'white',
+    //width: deviceWidth / 2 - 30,
+  },
+  crownsHeader: {
+    color: 'white',
+    fontSize: 30,
+    marginTop: 20,
+    borderRadius: 10,
+  },
+  crownsHeaderText: {
+    fontSize: 20,
+    color: 'white',
+  },
+  crowns: {
+    //backgroundColor: 'black',
+    width: deviceWidth / 2 - 10,
+    color: 'white',
+    margin: 5,
+    height: 100,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+  },
+  buyButton: {
+    width: 120,
+    justifyContent: 'center',
+    alignContent: 'center',
+    top: 0,
+    borderRadius: 50,
+    height: 30,
+    fontSize: 18,
+    color: 'yellow',
+    backgroundColor: '#589012',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    flexDirection: 'row',
+  },
+  buyText: {
+    color: 'white',
+    textAlign: 'right',
+    justifyContent: 'flex-end',
+    alignContent: 'flex-end',
+    alignItems: 'flex-end',
+  },
+  buyAmount: {
+    color: 'yellow',
+    textAlign: 'right',
+    justifyContent: 'flex-end',
+    alignContent: 'flex-end',
+    alignItems: 'flex-end',
+    marginRight: 20,
+  },
+});
+
+export default styles;

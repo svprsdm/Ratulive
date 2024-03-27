@@ -1,0 +1,110 @@
+import { relativeTimeRounding } from 'moment';
+import { StyleSheet } from 'react-native';
+export default styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+  },
+  signInButton: {
+    width: 300,
+    height: 50,
+    borderWidth: 1,
+    borderRadius: 5,
+    margin: 10,
+  },
+  containerImage: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  inputBox: {
+    width: '85%',
+    margin: 10,
+    padding: 15,
+    fontSize: 18,
+    borderColor: '#d3d3d3',
+    borderBottomWidth: 1,
+    textAlign: 'center',
+  },
+  button: {
+    marginTop: 20,
+    marginBottom: 10,
+    paddingVertical: 5,
+    alignItems: 'center',
+    backgroundColor: '#F6820D',
+    borderColor: '#F6820D',
+    borderWidth: 1,
+    borderRadius: 5,
+    width: 350,
+  },
+  buttonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#fff',
+  },
+  buttonHeading: {
+    marginTop: -30,
+    marginBottom: 10,
+    fontSize: 31,
+    fontWeight: 'bold',
+    color: '#fff',
+    position: relative,
+  },
+  buttonSubHeading: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 5,
+  },
+  buttonTextWhite: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#504f4f',
+  },
+  buttonSignup: {
+    fontSize: 12,
+  },
+  bottomBox: {
+    flex: 1,
+    width: '100%',
+    height: 300,
+    position: 'absolute',
+    bottom: 0,
+    justifyContent: 'center',
+    // backgroundColor: 'transparent',
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  logoutButton: {
+    backgroundColor: '#577fc1',
+    borderColor: '#4b91e0',
+    borderWidth: 1,
+    borderRadius: 5,
+    width: 200,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonMobile: {
+    marginTop: 20,
+    marginBottom: 10,
+    paddingVertical: 5,
+    alignItems: 'center',
+    backgroundColor: '#f1db5c',
+    borderColor: '#F6820D',
+    borderWidth: 1,
+    borderRadius: 5,
+    width: 300,
+  },
+  Topbarage: {
+    // top: -20,
+    // position: absolute
+  }
+});

@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+// defaultConfig {
+//     multiDexEnabled true
+// }
+buildscript {
+    ext {
+        buildToolsVersion = "30.0.3"
+        minSdkVersion = 26
+        compileSdkVersion = 31
+        targetSdkVersion = 31
+        googlePlayServicesAuthVersion = "18.0.0"
+        // supportLibVersion = "28.0.0"
+        // firebaseVersion = "+"
+    }
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath('com.android.tools.build:gradle:3.5.4')
+        //classpath 'com.google.gms:google-services:4.3.3'
+        classpath('com.google.gms:google-services:4.3.3')
+
+        //compile project(':react-native-red5pro')
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+//def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+allprojects {    
+    
+    repositories {
+        mavenLocal()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+    //   // Added for Camera Crop Image
+        maven { url 'https://maven.google.com' }
+
+      // Added for Camera Crop Image
+        maven { url "https://www.jitpack.io" }
+
+        google()
+        jcenter()
+    }
+}
